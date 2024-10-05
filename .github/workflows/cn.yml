@@ -54,6 +54,11 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+
+      - name: Setting Permission
+        run: |
+          cd viemiui_erofs
+          sudo chmod 777 -R *
           
       - name: VieMIUI Status
         env:
