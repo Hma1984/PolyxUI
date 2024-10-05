@@ -53,7 +53,8 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-  Status
+          
+      - name: VieMIUI Status
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
